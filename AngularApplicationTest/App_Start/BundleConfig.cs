@@ -9,6 +9,10 @@ namespace AngularApplicationTest {
                 "~/Content/bootstrap.css",
                 "~/Content/site.css"));
 
+            bundles.Add(new ScriptBundle("~/bundles/AngularApplicationTest")
+                .IncludeDirectory("~/Scripts/Controllers", "*.js")
+                .Include("~/Scripts/AngularApplicationTest.js"));
+
             BundleTable.EnableOptimizations = true;
         }
     }
